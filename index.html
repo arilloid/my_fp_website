@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fp_style.css" type="text/css" />
+    <title>my page</title>
+</head>
+<body>
+
+    <!--Intro Page-->
+    <section class="intro">
+        <div class="content">
+            <img src="https://live.staticflickr.com/3056/2937979400_1b0dc2483f_b.jpg" alt="rat">
+            <h2>Arina Kolodeznikova</h2>
+            <h3>CPA STUDENT</h3>
+            <br>
+            <a download="resume.pdf" href="./resume.pdf">RESUME</a>
+            <a href="#contact">CONTACT ME</a>
+        </div>
+    </section>
+
+    <!--About Me-->
+    <div class="info">
+        <div class="content">
+            <h1 class="subheading">About Me</h1>
+            <div class="aboutMe">
+                    <article>
+                        <h3>Academic Honesty</h3>
+                        <p>
+                            I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. 
+                            No part of this assessment has been copied manually or electronically from any other source 
+                            (including web sites) except for the information supplied by the WEB222 instructors and / 
+                            or made available in this assessment for my use. I also declare that no part of this assignment 
+                            has been distributed to other students.
+                        </p>
+                        <h3 id="date">Date: </h3>
+                    </article>
+                <aside>
+                    <h3>Basic Information</h3>
+                    <p>
+                        <strong>STUDENT: </strong><br>Arina Kolodeznikova<br>
+                        <strong>SECTION: </strong><br>NDD<br>
+                        <strong>STUDENT ID: </strong><br>145282216<br>
+                        <strong>INSTRUCTOR: </strong><br>Dr. Muath Alzghool<br>
+                    </p>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!--Education-->
+    <div class="education">
+        <div class="content">
+            <h1 class="subheading">Education</h1>
+            <div class="edcard">
+                <p class="years">
+                    2010 <br> ---- <br> 2021 
+                </p>
+                <div class="edinf">
+                    <p> 
+                        <strong>High School Diploma</strong><br>
+                        Secondary School No. 12<br>Mirny, Yakutia, Russia
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="edcard">
+                <p class="years">
+                    2021 <br> ---- <br> 2024 
+                </p>
+                <div class="edinf">
+                    <p>
+                        <strong>Advanced Diploma (CPA)</strong><br>
+                        Seneca College of Applied Arts And Technology<br>North York, ON
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Form-->
+    <div class="form">
+        <div class="content">
+            <fieldset>
+                <legend id="contact">Contact Form</legend>
+                <form id="formid" method="post" action="https://httpbin.org/post" target="_blank">
+                    <div>
+                        <label for="name">Name<br></label>
+                        <input required type="text" id="name" name="name"/> 
+                        <small class="error"></small> 
+                    </div>
+                    <div>
+                        <label for="organization">Organization<br></label>
+                        <input type="text" id="organization" name="organization"/>  
+                    </div>
+                    <div>
+                        <label for="mail">Email<br></label>
+                        <input required type="email" id="mail" name="email"/>
+                        <small class="error"></small>
+                     </div>
+                     <div>
+                        <label for="city">City<br></label>
+                        <input required list="cities" name="city" id="city">
+                        <datalist id="cities">
+                          <option value="Toronto">
+                          <option value="Vancouver">
+                          <option value="Montreal">
+                          <option value="Ottawa">
+                          <option value="Calgary">
+                        </datalist>
+                     </div>
+                     <div>
+                        <label for="address">Address<br></label>
+                        <input required type="text" id="address" name="address"/>
+                        <small class="error"></small>
+                     </div>
+                     <div>
+                        <label for="postal-code">Postal Code<br></label>
+                        <input required type="text" id="postal-code" name="postal-code"/>
+                        <small class="error"></small>
+                     </div>
+                     <div>
+                        <input required type="radio" name="options" id="question" />
+                        <label for="question" title="question">Question</label>  
+                     </div>
+                     <div>
+                        <input type="radio" name="options" id="comment" />
+                        <label for="comment" title="comment">Comment</label> 
+                     </div>
+                     <div>
+                        <input type="radio" name="options" id="hiring" />
+                        <label for="hiring" title="hiring">Hiring</label> 
+                     </div>
+                    <div id="rate">
+                        <label for="hour_rate">Hourly Rate $/h</label>
+                        <input required value="15.5" type="number" min="0" step="0.5" name="rate" id="hour_rate" autocomplete="off"/>
+                      </div>         
+                    <div>
+                        <textarea required rows = "5" name = "description"></textarea>
+                    </div>
+                </form>
+                <input class="form-button" id="clear" type="reset" value="Clear" form="formid"/>
+                <input class="form-button" id="submit" type="submit" value="Submit" form="formid"/>
+            </fieldset>
+        </div>
+    </div>
+
+    <!--JavaScript-->
+    <script src="./fp.js"></script>
+
+</body>
+</html>
