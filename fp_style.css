@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+/**********GLOBAL**********/
+html {
+    font-family: 'Righteous', serif;
+    font-weight: lighter;
+}
+body {
+    margin: 0;
+    font-size: 1vw;
+}
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+.content { 
+    margin:auto;
+    max-width: 1024px;
+}
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+h2 {
+    font-size: 1.5rem;
+}
+.subheading {
+    margin-left: 2rem;
+}
+
+/**********INTRO PAGE**********/
+.intro {
+    color: #ffffff;
+    text-align: center;
+    background-color: #757575;
+    padding: 5vw 30vw 15vw;
+}
+.intro h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem auto;
+}
+.intro h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem; 
+}
+.intro img {
+    max-width: 27vw;
+    max-height: auto;
+    border-width: 1.5rem;
+    border-style: solid;
+    border-color: #BDBDBD;
+}
+.intro a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    margin: 0.8rem;
+    background-color: #636363;
+    font-weight: bold;
+    border-radius: 3rem;
+    border: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.intro a:hover {
+    background-color: #212121;
+}
+
+/**********ABOUT ME**********/
+.info {
+    background-color: #c19898;
+    padding: 15vw 5vw;
+}
+.aboutMe, .edcard {
+    overflow: hidden;
+    background-color: #ffffff;
+    color:#5c5757;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: transparent;
+}
+.aboutMe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 4rem;
+    gap: 3rem;
+}
+article  { 
+    max-width: 50vw;
+}
+aside {
+    max-width: 30vw;
+}
+
+/**********EDUCATION**********/
+.years { 
+    width: 4rem; 
+    float: left; 
+}
+.education {
+    padding: 15vw 20vw;
+    background-color: #5c5757;
+}
+.edinf {
+    max-width: 40vw;
+}
+.edcard{
+    padding: 1.3rem 2rem;
+}
+.edcard aside{
+    width: 5rem;
+    float: left;
+}
+.edcard .edinf{
+    float: left;
+}
+
+/**********CONTACT FORM**********/
+.form {
+ background-color: #c19898;
+ padding: 15vw 0 5vw;
+}
+legend {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-left: 1rem 4rem;
+}
+label {
+    font-size: 1rem;
+    color: #7d6b6b;
+    margin: 0.5rem;
+}
+fieldset {
+    margin: auto;
+    max-width: 35vw;
+    border: solid;
+    border-color: #ffffff;
+    background-color: #cdadad;
+}
+input {
+    border-radius: 0.5rem;
+    border:0.15rem solid #cdadad;
+    outline: none;
+    padding: 0.2rem;
+    max-width: 15rem
+}
+input:focus {
+    border: 0.15rem solid #7d6b6b;
+}
+textarea {
+    max-width: 30vw;
+    margin: 0.5rem, 0;
+    border-radius: 0.5rem;
+    border: 0.15rem solid #cdadad;
+    resize: none;
+}
+textarea:focus {
+    outline: none;
+    border: 0.15rem solid #7d6b6b;
+}
+input[type="radio"] {
+  accent-color: #7d6b6b;
+}
+.form-button {
+    color: #7d6b6b;
+    background-color: #ffffff;
+    border: transparent;
+    border-radius: 1rem;
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem 0.6rem 0 0;
+    font-size: 1rem;
+}
+.form-button:hover{
+    color: #ffffff;
+    background-color: #7d6b6b;
+}
+#rate {
+    display: none;
+}
+#rate label {
+    margin-bottom: 0;
+}
+#rate input {
+    margin-bottom: 1rem;
+}
+
+/**********RESPONSIVENESS**********/
+/*--SMALL--*/
+@media (max-width: 850px) {
+    h1 {
+        font-size: 2rem;
+    }
+   p {
+    font-size: small;
+   }
+   .intro a {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.7rem;
+    margin: 0.1rem;
+}
+}
+
+/*--VERY SMALL--*/
+@media (max-width: 550px) {
+    body {
+        font-size: 0.2rem;
+    }
+    .intro {
+        padding: 10vw 10vw;
+    }
+    .intro img {
+        max-width: 60vw;
+    }
+    .aboutMe{
+        grid-template-columns: 1fr;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+    .aboutMe {
+        font-size: x-small;
+    }
+    .intro a {
+        font-size: 1rem;
+        padding: 0.5rem 0.7rem;
+        margin: 0.1rem;
+    }
+}
