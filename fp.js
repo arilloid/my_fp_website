@@ -1,4 +1,5 @@
 window.onload = function() {
+    //dynamically displaying the date
     var today = new Date();
     var date = document.createTextNode(today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate());
     document.getElementById("date").appendChild(date);
@@ -10,6 +11,8 @@ window.onload = function() {
         return postalRegex.test(postal);
     }
     
+    //validating the postal code
+    //all of the other validations are done using "required" and "email" that are built in html
     form.addEventListener('submit', (e) => {
         var postalCode = postalCodeEl.value.trim();
         if (!isPostalValid(postalCode)) {
