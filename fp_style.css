@@ -226,6 +226,18 @@ input[type="radio"] {
 
 /*--VERY SMALL--*/
 @media (max-width: 550px) {
+    .intro {
+        padding: 15vw 15vw 60vw;
+    }
+    .info {
+        padding: 20vw 15vw 60vw;
+    }
+    .education {
+        padding: 15vw 15vw 60vw;
+    }
+    .form {
+        padding: 15vw 15vw;
+    }
     body {
         font-size: 0.2rem;
     }
@@ -233,13 +245,14 @@ input[type="radio"] {
         font-size: 0.2rem;
         font-weight: 200;
     }
-    .intro {
-        padding: 10vw 10vw;
+    .intro h2{
+        font-size: 7vw;
     }
     .intro img {
         max-width: 60vw;
     }
     .aboutMe{
+        padding: 4vw 9vw;
         grid-template-columns: 1fr;
         gap: 0;
     }
@@ -252,25 +265,32 @@ input[type="radio"] {
         margin-bottom: 0;
         font-size: 0.9rem;
     }
-    article h3 {
-        margin-top: 0.7rem;
-        margin-bottom: 0;
-        font-size: 0.9rem;
-    }
-    article p{ 
-        max-width: 50vw;
+    article {
+       display: none;
     }
     aside {
+        font-size: 0.7rem;
         max-width: 50vw;
     }
-    aside p {
-        font-size: 0.7rem;
+    aside h3 {
+        font-size: 1rem;
+        font-weight: normal;
     }
     .info .subheading {
         margin-left: 4rem;
     }
+    .edinf {
+        max-width: 40vw;
+    }
+    .edcard{
+        margin-bottom: 3vw;
+        padding: 5vw 10vw 
+    }
     .education .subheading {
-        margin-left: 1.3rem;
+        margin-left: 4rem;
+    }
+    .years {
+        display: none;
     }
     legend {
         font-size: 6vw;
@@ -283,5 +303,8 @@ input[type="radio"] {
     input[type="email"],
     input[type="number"] {
        width: 40vw;
+    }
+    #city {
+        width: 40vw;
     }
 }
